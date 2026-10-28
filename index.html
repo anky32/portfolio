@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arpan Pandey | AI & ML Developer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Arpan Pandey — Software Developer specializing in AI & Machine Learning. Building LLM applications, AI agents, RAG systems, and full-stack solutions. Based in Kathmandu, Nepal." />
+  <meta name="author" content="Arpan Pandey" />
+  <meta name="keywords" content="Arpan Pandey, AI Developer, ML Engineer, LLMs, RAG, Generative AI, Python, Django, Kathmandu" />
+
+  <!-- Open Graph (LinkedIn / Facebook previews) -->
+  <meta property="og:title" content="Arpan Pandey | AI & ML Developer" />
+  <meta property="og:description" content="Software Developer specializing in AI & Machine Learning — building LLM applications, AI agents, and full-stack systems. Based in Kathmandu, Nepal." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arpanpandey.dev" />
+  <meta property="og:image" content="https://arpanpandey.dev/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Arpan Pandey | AI & ML Developer" />
+  <meta name="twitter:description" content="Building LLM applications, AI agents, and full-stack systems." />
+
+  <!-- Favicon (SVG inline so no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="body-loading">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- Navbar identity — initials avatar linking back to top -->
+      <a href="#home" class="nav-identity" aria-label="Back to top">
+        <div class="nav-avatar" aria-hidden="true">AP</div>
+        <span class="nav-name">Arpan Pandey</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <!-- Replace href with your actual resume PDF path once you add it -->
+        <a href="ArpanPandey-Resume.pdf" download class="btn-resume" aria-label="Download Resume">
+          <i class="fas fa-download"></i> Resume
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Arpan Pandey</h1>
+      <div class="hero-role">
+        <span class="role-static">I build </span>
+        <span class="role-typed" id="typedText"></span>
+        <span class="cursor" aria-hidden="true">|</span>
+      </div>
+      <!-- One sharp sentence — detail lives in About -->
+      <p class="hero-summary">
+        Software Developer specializing in <strong>AI & Machine Learning</strong> — turning LLMs, RAG, and AI agents into production-ready tools, from resume intelligence systems to stock forecasting platforms.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/anky32" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/arpan-pandey-54838a281/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:pandeyarpan84@gmail.com" aria-label="Send email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-card-title">arpan.py</span>
+        </div>
+        <pre class="code-card-body"><code><span class="kw">class</span> <span class="cls">Arpan</span>:
+  <span class="kw">def</span> <span class="fn">__init__</span>(self):
+    self.role = <span class="str">"AI/ML Developer"</span>
+    self.skills = [<span id="codeSkill" class="str">"LLMs"</span>]
+    self.location = <span class="str">"Kathmandu, Nepal"</span>
+    self.open_to_work = <span class="kw">True</span>
+
+  <span class="kw">def</span> <span class="fn">get_passion</span>(self):
+    <span class="kw">return</span> <span class="str">"Building AI that matters"</span></code></pre>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll to About section">
+      <i class="fas fa-chevron-down" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-avatar">
+            <!--
+              PHOTO TIP: Replace the initials div below with:
+              <img src="photo.jpg" alt="Arpan Pandey" class="avatar-photo" />
+              Then delete .avatar-initials and add .avatar-photo to your CSS (border-radius:50%; width:140px; height:140px; object-fit:cover)
+            -->
+            <div class="avatar-initials" aria-label="Arpan Pandey">AP</div>
+            <div class="avatar-ring" aria-hidden="true"></div>
+            <div class="avatar-ring ring2" aria-hidden="true"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">AI Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">ML Certs</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Public Repos</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a <strong>Software Developer specializing in AI & Machine Learning</strong>, based in Kathmandu, Nepal. I graduated with a BSc (Hons) in Information Technology from <strong>Herald College Kathmandu</strong>. My focus is on building AI systems that are actually useful — not just demos, but end-to-end applications with real data flows.
+          </p>
+          <p>
+            I work across the full AI stack: <strong>prompt engineering and LLM orchestration</strong> 
+            with LangChain and Groq, <strong>RAG pipelines</strong> backed by vector databases, 
+            <strong>time-series forecasting</strong> with ARIMA/LSTM hybrids, and 
+            <strong>web applications</strong> with Django and Streamlit. My projects connect 
+            these layers into deployable systems.
+          </p>
+          <p class="currently-building">
+            <span class="cb-label">Currently building →</span> 
+            deeper agentic workflows with tool-use and memory, and exploring multi-modal LLM applications.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span>Kathmandu, Nepal</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+              <span>Herald College Kathmandu — BSc (Hons) IT</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:pandeyarpan84@gmail.com">pandeyarpan84@gmail.com</a>
+            </div>
+            <div class="detail-item">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <a href="https://github.com/anky32" target="_blank" rel="noopener">github.com/anky32</a>
+            </div>
+          </div>
+          <div class="about-languages">
+            <span class="lang-badge">🇬🇧 English</span>
+            <span class="lang-badge">🇳🇵 Nepali</span>
+            <span class="lang-badge">🇮🇳 Hindi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" data-delay="0">
+          <div class="skill-cat-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="100">
+          <div class="skill-cat-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+          <h3>AI & Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="tag tag-ai">LLMs</span>
+            <span class="tag tag-ai">AI Agents</span>
+            <span class="tag tag-ai">RAG</span>
+            <span class="tag tag-ai">Generative AI</span>
+            <span class="tag tag-ai">LangChain</span>
+            <span class="tag tag-ai">Prompt Engineering</span>
+            <span class="tag tag-ai">NLP</span>
+            <span class="tag tag-ai">Conversational AI</span>
+            <span class="tag tag-ai">Vector Databases</span>
+            <span class="tag tag-ai">Sentence Transformers</span>
+            <span class="tag tag-ai">LSTM</span>
+            <span class="tag tag-ai">ARIMA</span>
+            <span class="tag tag-ai">CNN</span>
+            <span class="tag tag-ai">Time-Series Forecasting</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="200">
+          <div class="skill-cat-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+          <h3>Frameworks & Libraries</h3>
+          <div class="skill-tags">
+            <span class="tag tag-fw">Django</span>
+            <span class="tag tag-fw">Streamlit</span>
+            <span class="tag tag-fw">Bootstrap</span>
+            <span class="tag tag-fw">Tailwind CSS</span>
+            <span class="tag tag-fw">Scikit-Learn</span>
+            <span class="tag tag-fw">TensorFlow</span>
+            <span class="tag tag-fw">Keras</span>
+            <span class="tag tag-fw">PyTorch</span>
+            <span class="tag tag-fw">Pandas</span>
+            <span class="tag tag-fw">NumPy</span>
+            <span class="tag tag-fw">Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="300">
+          <div class="skill-cat-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+          <h3>Developer Tools</h3>
+          <div class="skill-tags">
+            <span class="tag tag-tool">Git</span>
+            <span class="tag tag-tool">GitHub</span>
+            <span class="tag tag-tool">VS Code</span>
+            <span class="tag tag-tool">Jupyter Notebook</span>
+            <span class="tag tag-tool">OpenAI API</span>
+            <span class="tag tag-tool">Groq API</span>
+            <span class="tag tag-tool">REST APIs</span>
+            <span class="tag tag-tool">Zapier</span>
+            <span class="tag tag-tool">Make (Integromat)</span>
+            <span class="tag tag-tool">MySQL</span>
+            <span class="tag tag-tool">SQLite</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Things I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Featured Project -->
+        <div class="project-card project-featured" data-delay="0">
+          <div class="project-featured-badge">Featured</div>
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/anky32" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <!-- Add your Streamlit Cloud URL when deployed -->
+              <a href="#" class="demo-link" aria-label="Live demo (coming soon)" title="Deploy on Streamlit Cloud to activate">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Resume Assistant</h3>
+          <div class="project-story">
+            <div class="story-item">
+              <span class="story-label">Problem</span>
+              <span>Job seekers submit resumes that never pass ATS filters — without knowing why they're rejected.</span>
+            </div>
+            <div class="story-item">
+              <span class="story-label">Built</span>
+              <span>LLM pipeline that parses both resume and job description, calculates ATS score via semantic matching, identifies skill gaps, and generates tailored cover letters and interview prep — all through a conversational chatbot interface.</span>
+            </div>
+            <div class="story-item">
+              <span class="story-label">Result</span>
+              <span>End-to-end analysis in under 30 seconds; PDF reports stored in SQLite for tracking improvement over multiple iterations.</span>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Python</span><span>Streamlit</span><span>Groq API</span><span>NLP</span><span>LLMs</span><span>SQLite</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-delay="100">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/anky32" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Sales & Customer Support Automation Bot</h3>
+          <div class="project-story">
+            <div class="story-item">
+              <span class="story-label">Problem</span>
+              <span>Small sales teams waste hours on repetitive inquiry responses and manual lead qualification.</span>
+            </div>
+            <div class="story-item">
+              <span class="story-label">Built</span>
+              <span>LLM-powered bot that handles FAQs, scores leads into Hot/Warm/Cold buckets, and auto-generates personalized follow-up emails — backed by a CRM dashboard with SQLite.</span>
+            </div>
+            <div class="story-item">
+              <span class="story-label">Result</span>
+              <span>Full automation of the lead-to-email workflow; CSV export for CRM integration with existing tools.</span>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Python</span><span>Streamlit</span><span>Groq API</span><span>LLMs</span><span>SQLite</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-delay="200">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/anky32" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">NEPSE AI Stock Forecasting System</h3>
+          <div class="project-story">
+            <div class="story-item">
+              <span class="story-label">Problem</span>
+              <span>Nepal Stock Exchange (NEPSE) investors lack accessible data-driven forecasting tools for local securities.</span>
+            </div>
+            <div class="story-item">
+              <span class="story-label">Built</span>
+              <span>Django platform implementing ARIMA, LSTM, and a Hybrid ARIMA-LSTM model with RMSE/MAE/MAPE benchmarking and interactive dashboards for historical trend analysis.</span>
+            </div>
+            <div class="story-item">
+              <span class="story-label">Result</span>
+              <span>Hybrid model outperformed standalone ARIMA and LSTM on holdout data; authenticated multi-user system with admin panel and feedback module.</span>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Python</span><span>Django</span><span>ARIMA</span><span>LSTM</span><span>Hybrid Model</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-delay="300">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/anky32" target="_blank" rel="noopener" aria-label="View on GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Hate Speech Detection & Text Classification</h3>
+          <div class="project-story">
+            <div class="story-item">
+              <span class="story-label">Problem</span>
+              <span>Manual content moderation doesn't scale — platforms need automated classification at volume.</span>
+            </div>
+            <div class="story-item">
+              <span class="story-label">Built</span>
+              <span>NLP pipeline covering tokenization, stop-word removal, stemming, and feature extraction, then evaluated across multiple ML classifiers using accuracy, precision, recall, and F1.</span>
+            </div>
+            <div class="story-item">
+              <span class="story-label">Result</span>
+              <span>End-to-end classification pipeline ready for integration as a content moderation microservice.</span>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span>Python</span><span>NLP</span><span>Scikit-Learn</span><span>TensorFlow</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GitHub CTA -->
+      <div class="projects-cta">
+        <p>More on GitHub →</p>
+        <a href="https://github.com/anky32" target="_blank" rel="noopener" class="btn btn-secondary">
+          <i class="fab fa-github"></i> View All Repositories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="certifications section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Credentials</h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card" data-delay="0">
+          <div class="cert-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+          <div class="cert-info">
+            <h3>Mathematics for Machine Learning: PCA</h3>
+            <div class="cert-meta">
+              <span class="cert-issuer"><i class="fas fa-university" aria-hidden="true"></i> Imperial College London — Coursera</span>
+            </div>
+            <p>Principal Component Analysis, dimensionality reduction, and eigenvector decomposition for ML preprocessing.</p>
+            <a href="https://www.coursera.org/specializations/mathematics-machine-learning" target="_blank" rel="noopener" class="cert-verify">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i> Verify on Coursera
+            </a>
+          </div>
+        </div>
+        <div class="cert-card" data-delay="100">
+          <div class="cert-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+          <div class="cert-info">
+            <h3>Mathematics for Machine Learning: Linear Algebra</h3>
+            <div class="cert-meta">
+              <span class="cert-issuer"><i class="fas fa-university" aria-hidden="true"></i> Imperial College London — Coursera</span>
+            </div>
+            <p>Vectors, matrices, eigenvalues, and linear transformations — the mathematical backbone of all ML models.</p>
+            <a href="https://www.coursera.org/specializations/mathematics-machine-learning" target="_blank" rel="noopener" class="cert-verify">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i> Verify on Coursera
+            </a>
+          </div>
+        </div>
+        <div class="cert-card" data-delay="200">
+          <div class="cert-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
+          <div class="cert-info">
+            <h3>Mathematics for Machine Learning: Multivariate Calculus</h3>
+            <div class="cert-meta">
+              <span class="cert-issuer"><i class="fas fa-university" aria-hidden="true"></i> Imperial College London — Coursera</span>
+            </div>
+            <p>Gradients, partial derivatives, chain rule, and optimization — directly applicable to gradient descent and backprop.</p>
+            <a href="https://www.coursera.org/specializations/mathematics-machine-learning" target="_blank" rel="noopener" class="cert-verify">
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i> Verify on Coursera
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="coursework-wrap">
+        <h3 class="coursework-title">Relevant Coursework</h3>
+        <div class="coursework-grid">
+          <span class="course-item"><i class="fas fa-microchip" aria-hidden="true"></i> Artificial Intelligence</span>
+          <span class="course-item"><i class="fas fa-brain" aria-hidden="true"></i> Machine Learning</span>
+          <span class="course-item"><i class="fas fa-sitemap" aria-hidden="true"></i> Data Structures & Algorithms</span>
+          <span class="course-item"><i class="fas fa-database" aria-hidden="true"></i> Database Systems</span>
+          <span class="course-item"><i class="fas fa-cogs" aria-hidden="true"></i> Software Engineering</span>
+          <span class="course-item"><i class="fas fa-chart-bar" aria-hidden="true"></i> Data Analytics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">
+          Have a project in mind or want to collaborate? I'm always open to interesting opportunities.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:pandeyarpan84@gmail.com">pandeyarpan84@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/arpan-pandey-54838a281/" target="_blank" rel="noopener">linkedin.com/in/arpan-pandey-54838a281</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/anky32" target="_blank" rel="noopener">github.com/anky32</a>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          FORM SETUP: Connect this form to Formspree (free, no backend needed):
+          1. Go to https://formspree.io and create an account
+          2. Create a new form — you'll get an endpoint like https://formspree.io/f/xyzabcde
+          3. Replace the action attribute below with your endpoint:
+             <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_ID" method="POST">
+          4. Remove the e.preventDefault() line in script.js (let it submit natively)
+          OR keep the JS handler and use the Formspree AJAX API.
+        -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <p class="footer-copy">Designed &amp; built by Arpan Pandey &copy; <span id="footerYear">2026</span></p>
+        <div class="footer-socials">
+          <a href="https://github.com/anky32" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/arpan-pandey-54838a281/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:pandeyarpan84@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
